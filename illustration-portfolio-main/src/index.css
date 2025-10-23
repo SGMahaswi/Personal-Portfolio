@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&display=swap');
+
+:root{
+  --bg:#0b0c10;
+  --surface:#0f1115;
+  --muted:#9CA3AF;
+  --accent:#6366F1; /* indigo */
+  --white:#F8FAFC;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background: linear-gradient(180deg, var(--bg), #0f1115 70%);
+  color: var(--white);
+  font-family: "Sora", sans-serif;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* custom small helpers */
+.section-surface {
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+/* make default img elements not overflow */
+img { max-width:100%; display:block; }
